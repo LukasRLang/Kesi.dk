@@ -1,14 +1,34 @@
 @font-face {
   font-family: "Helvetica Now";
-  src: url(https://lukasrlang.github.io/Kesi.dk/fonts/HelveticaNowText-Regular.ttf) format('truetype');
+  src: url(https://lukasrlang.github.io/Kesi.dk//fonts/HelveticaNowText-Regular.ttf) format('truetype');
   font-weight: regular;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Helvetica Now";
+  src: url(https://lukasrlang.github.io/Kesi.dk//fonts/HelveticaNowText-Medium.ttf) format('truetype');
+  font-weight: medium;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Helvetica Now";
+  src: url(https://lukasrlang.github.io/Kesi.dk//fonts/HelveticaNowText-Bold.ttf) format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Helvetica Now";
+  src: url(https://lukasrlang.github.io/Kesi.dk//fonts/HelveticaNowText-Black.ttf) format('truetype');
+  font-weight: black;
   font-style: normal;
 }
 
 body {
   margin: 0;
   font-family: 'Helvetica Now';
-  font-weight: 'black';
 }
 
 .page-wrapper {
@@ -39,6 +59,7 @@ body {
 
 .latina-ass-heading {
   position: absolute;
+  font-weight: medium;
   font-size: 30vw;
   color: white;
   filter: invert(0);
