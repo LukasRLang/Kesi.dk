@@ -1,17 +1,67 @@
-const tuneBH = {
-  title:"Blå Himel (feat. Hans Philip)", 
-  album:"BO4L",
-  cover: 'imgs/covers/bo4l.jpg',
-  desc:"BO4L er KESIs tredje album og efterfølgeren til EP'eN 888 fra 2019.",
-  tune: new Audio("tunes/bh.mp3"),
+let current_song = -1
+
+function play_next_song(){
+    current_song++
+    let song = "!"
+    for (let [key, values] of Object.entries(tunes)){
+        if (key == current_song){
+            song = new Song(values)
+            song.start()
+            return 1
+        }
+    }
 }
 
-const tuneML = {
-  title:"Mona Lisa (feat. Lord Siva)", 
-  album:"30 Somre",
-  cover: 'imgs/covers/30somre.jpg',
-  desc:'"KESI FINDER IND TIL LIVSGLÆDEN OG SOMMERRUSEN PÅ 30 SOMRE" skriver SoundVenue',
-  tune: new Audio("tunes/ml.mp3"),
+class Song {
+    constructor(values){
+        this.song_name = values.title
+        this.album = values.album
+        this.cover = values.cover
+        this.desc = values.desc
+        this.tune = values.tune
+        console.log("made song class")
+        console.log(values)
+    }
+
+    start() {
+        console.log(this.tune)
+        let audio_player = document.getElementById("tuneBH")
+        audio_player.setAttribute("src", this.tune)
+        audio_player.play()
+    }
+
+    stop() {
+        console.log("stopped", this.song_name)
+    }
 }
 
-let play = function(){document.getElementById("tuneBH").play()}
+const tunes = {
+    0 : {
+        title:"mona",
+        album:"asefewf",
+        cover:"lawejdifsorf",
+        desc: "s34895703",
+        tune: "tunes/bh.mp3"
+    },
+    1 : {
+        title:"blå",
+        album:"asefewf",
+        cover:"lawejdifsorf",
+        desc: "s34895703",
+        tune: "tunes/ml.mp3"
+    },
+    2 : {
+        title:"diller",
+        album:"asefewf",
+        cover:"lawejdifsorf",
+        desc: "s34895703",
+        tune: "new Audio"
+    },
+    3 : {
+        title:"sejr",
+        album:"asefewf",
+        cover:"lawejdifsorf",
+        desc: "s34895703",
+        tune: "new Audio"
+    } 
+}

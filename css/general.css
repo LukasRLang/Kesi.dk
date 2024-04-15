@@ -45,10 +45,6 @@ body {
   mix-blend-mode: difference;
 }
 
-#tuneControl {
-  position: fixed;
-  z-index: 2;
-  left: 20px;
-  bottom: 20px;
-  color: white;
+#muteBTN {
+  color: black;
 }

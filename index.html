@@ -19,13 +19,13 @@
       <h1 class="latina-ass-heading">
         KESI
       </h1>
-      <button id="muteBtn" onclick="play('tunes/bh.mp3')">Play music</button>
+      <button id="muteBtn" onclick="play_next_song()">Play music</button>
     </div>
   </main>
 
   <script src="js/tunes.js"></script>
   <script src="js/index.js"></script>
-  <audio id="tuneBH" src="tunes/bh.mp3"></audio>
+  <audio id="tuneBH" src="tunes/bh.mp3" onended="play_next_song()"></audio>
 
 </body>
 </html>
