@@ -1,7 +1,7 @@
 @font-face {
   font-family: "Helvetica Now";
-  src: url(https://lukasrlang.github.io/Kesi.dk/fonts/HelveticaNowText-Black.ttf) format('truetype');
-  font-weight: black;
+  src: url(https://lukasrlang.github.io/Kesi.dk/fonts/HelveticaNowText-Regular.ttf) format('truetype');
+  font-weight: regular;
   font-style: normal;
 }
 
@@ -45,6 +45,9 @@ body {
   mix-blend-mode: difference;
 }
 
-#muteBTN {
+#muteBtn {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
   color: black;
 }

@@ -9,7 +9,7 @@ function play_next_song(){
             song.start()
             return 1
         }
-        if (current_song == 1) {
+        if (current_song == 2) {
             current_song = -1;
         }
     }
