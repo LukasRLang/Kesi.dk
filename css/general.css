@@ -1,40 +1,40 @@
 
 @font-face {
-  font-family: "Helvetica Now";
-  src: url(https://lukasrlang.github.io/Kesi.dk//fonts/HelveticaNowText-Regular.ttf) format('truetype');
-  font-weight: regular;
-  font-style: normal;
+  font-family: myHelvetica;
+  font-weight: normal;
+  src: url(../fonts/HelveticaNowText-Regular.otf);
 }
 
 @font-face {
-  font-family: "Helvetica Now";
-  src: url(https://lukasrlang.github.io/Kesi.dk//fonts/HelveticaNowText-Medium.ttf) format('truetype');
-  font-weight: medium;
-  font-style: normal;
+  font-family: myHelvetica;
+  font-weight: 100;
+  src: url(../fonts/HelveticaNowText-Medium.otf);
 }
 
-@font-face {
-  font-family: "Helvetica Now";
-  src: url(https://lukasrlang.github.io/Kesi.dk//fonts/HelveticaNowText-Bold.ttf) format('truetype');
-  font-weight: bold;
-  font-style: normal;
-}
 
 @font-face {
-  font-family: "Helvetica Now";
-  src: url(https://lukasrlang.github.io/Kesi.dk//fonts/HelveticaNowText-Black.ttf) format('truetype');
+  font-family: myHelvetica;
   font-weight: black;
-  font-style: normal;
+  src: url(../fonts/HelveticaNowText-Black.otf);
 }
-
 body {
   margin: 0;
-  font-family: 'Helvetica Now';
+  font-family: myHelvetica;
 }
 
 .page-wrapper {
   margin: 0;
   padding: 0;
+}
+
+h1 {
+  position: absolute;
+  font-size: 30vw;
+  font-weight: normal;
+  font-family: myHelvetica;
+  color: white;
+  filter: invert(0);
+  mix-blend-mode: difference;
 }
 
 .hero {
@@ -56,62 +56,6 @@ body {
   height: 100%;
   object-fit: cover;
   object-position: center;
-}
-
-.latina-ass-heading {
-  position: absolute;
-  font-weight: medium;
-  font-size: 30vw;
-  color: white;
-  filter: invert(0);
-  mix-blend-mode: difference;
-}
-
-#muteBtn {
-  position: absolute;
-  bottom: 20px;
-  left: 20px;
-  color: black;
-}
-
-body {
-  margin: 0;
-  font-family: 'Helvetica Now';
-  font-weight: 'black';
-}
-
-.page-wrapper {
-  margin: 0;
-  padding: 0;
-}
-
-.hero {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  width: 100vw;
-  overflow: hidden;
-}
-
-.hero-bg {
-  position: absolute;
-  z-index: 0;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-}
-
-.latina-ass-heading {
-  position: absolute;
-  font-size: 30vw;
-  color: white;
-  filter: invert(0);
-  mix-blend-mode: difference;
 }
 
 #muteBtn {
