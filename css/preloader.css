@@ -1,4 +1,3 @@
-
 .preloader-contain {
   position: relative;
   display: flex;
@@ -37,6 +36,48 @@
 }
 .loadingText {
   margin: 2px;
+  font-weight: regular;
+  font-size: 0.875rem;
+}
+
+.preloader-contain {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+}
+.preloader-content {
+  position: relative;
+  display: flex;
+  justify-content: end;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  width: 300px;
+  height: 400px;
+}
+#preImage {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+.pre-text-contain {
+  position: relative;
+  display: flex;
+  z-index: 10;
+  width: 100%;
+  justify-content: space-between;
+  color: white;
+
+  filter: invert(0);
+  mix-blend-mode: difference;
+}
+.loadingText {
+  margin: 4px;
   font-weight: regular;
   font-size: 0.875rem;
 }
