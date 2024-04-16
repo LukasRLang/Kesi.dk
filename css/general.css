@@ -1,25 +1,7 @@
-
-@font-face {
-  font-family: myHelvetica;
-  font-weight: normal;
-  src: url(../fonts/HelveticaNowText-Regular.otf);
-}
-
-@font-face {
-  font-family: myHelvetica;
-  font-weight: 100;
-  src: url(../fonts/HelveticaNowText-Medium.otf);
-}
-
-
-@font-face {
-  font-family: myHelvetica;
-  font-weight: black;
-  src: url(../fonts/HelveticaNowText-Black.otf);
-}
 body {
   margin: 0;
-  font-family: myHelvetica;
+  font-family: 'Gambetta', serif;
+  font-family: 'General Sans', sans-serif;
 }
 
 .page-wrapper {
